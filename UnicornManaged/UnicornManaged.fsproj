@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net47</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Const\Arm.fs" />
+    <Compile Include="Const\Arm64.fs" />
+    <Compile Include="Const\Common.fs" />
+    <Compile Include="Const\M68k.fs" />
+    <Compile Include="Const\Mips.fs" />
+    <Compile Include="Const\Sparc.fs" />
+    <Compile Include="Const\X86.fs" />
+    <Compile Include="Binding\IBinding.fs" />
+    <Compile Include="Binding\MockBinding.fs" />
+    <Compile Include="Binding\NativeBinding.fs" />
+    <Compile Include="Binding\BindingFactory.fs" />
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="ConvertUtility.fs" />
+    <Compile Include="InternalHooks.fs" />
+    <Compile Include="UnicornEngineException.fs" />
+    <Compile Include="Unicorn.fs" />
+    <Compile Include="Library.fs" />
+  </ItemGroup>
+
+  <ItemGroup />
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.Compiler.Tools" Version="10.2.3" />
+  </ItemGroup>
+
+</Project>
